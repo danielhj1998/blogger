@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <!--KaTeX-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$', right: '$', display: false} ], throwOnError: false });"></script>
+
+    <!--Mermaid-->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+  </head>
+
+  <body>
+        <div class="go-home">
+          <a href="{{ site.url }}"> {% include icons/logo.svg %} </a>
+        </div>
+    <div class="page-content">
+     {{ content }}
+
+     <!--Script to copy KaTeX directly to clipboard-->
+     <script>
+         document.addEventListener('copy', function (event) {
+              const selection = window.getSelection();
+            if (selection.isCollapsed) {
+                  return;  // default action OK
+            }
+            const fragment = selection.getRangeAt(0).cloneContents();
+            const katexs = fragment.querySelectorAll('.katex');
+            if (katexs.length === 0) {
+                  return;  // default action OK
+            }
+            katexs.forEach (function (element) {
+                const texSource = element.querySelector('annotation');
+                if (texSource) {
+                      element.replaceWith(texSource);
+                    texSource.innerHTML = '$' + texSource.innerHTML + '$';
+                }
+            });
+            fragment.querySelectorAll('.katex-display annotation').forEach (function (element) {
+                element.innerHTML = '$' + element.innerHTML + '$';
+            })
+            event.clipboardData.setData('text/plain', fragment.textContent);
+            event.clipboardData.setData('text/html', selection.getRangeAt(0).cloneContents());
+            event.preventDefault();
+        })
+     </script>
+    </div>
+  </body>
+
+<!--mermaid-->
+  <script>
+    var config = {
+        startOnLoad:true,
+        theme: 'forest',
+        flowchart:{
+                useMaxWidth:false,
+                htmlLabels:true
+            }
+    };
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    </script>
+
+</html>

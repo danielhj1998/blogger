@@ -1,0 +1,118 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+@import 'code.css';
+code {
+    background-color: #F8F8F8;
+    font-family: 'Fira Code', monospace
+}
+
+@charset "utf-8";
+
+/* Constants */
+$font-size-body: 1em;
+
+/* Colors */
+$initialDepthColor: hsl(320-45,36,72);
+$dark: #36393b;
+$clear: white;
+$accent: #dab49b;
+$secondary: #634d55;
+
+html, body {
+    height: 90%;
+}
+
+body {
+    /* General styles */
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $dark;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: $font-size-body * 2.5;
+    font-family: 'Fira Sans', sans-serif;
+}
+h2 {
+    font-size: $font-size-body * 2.1;
+    font-family: 'Fira Sans', sans-serif;
+}
+h3 {
+    font-size: $font-size-body * 1.7;
+    font-family: 'Fira Sans', sans-serif;
+}
+h4 {
+    font-size: $font-size-body * 1.5;
+    font-family: 'Fira Sans', sans-serif;
+}
+h5 {
+    font-size: $font-size-body * 1.2;
+    font-family: 'Fira Sans', sans-serif;
+}
+h6 {
+    font-size: $font-size-body;
+    font-family: 'Fira Sans', sans-serif;
+}
+p {font-size: $font-size-body;}
+
+// Default layout
+div.go-home {
+  margin: 10px 0 0 10px;
+  svg {
+    display: inline-block;
+    width: $font-size-body * 4;
+    height: $font-size-body * 4;
+    vertical-align: middle;
+  }
+}
+
+div.page-content {
+    padding: 20px 20px;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    img {
+        max-width: 800px;
+    }
+}
+
+// notes Layout
+ul.note-dir-menu {
+    min-width: 100px;
+    list-style: none;
+    li {
+    display: inline;
+        a {
+            font-family: 'Fira Sans', sans-serif;
+            padding: 0 10px;
+            color: $dark;
+            border-left: 1px solid transparentize($dark, 1);
+            border-right: 1px solid transparentize($dark, 1);
+        }
+        a:hover {
+            border-left: 1px solid $dark;
+            border-right: 1px solid $dark;
+        }
+    }
+    border-bottom: 1px solid $dark;
+    padding-bottom: 2px;
+}
+
+// small screens
+@media (max-width: 800px) {
+    div.page-content {
+        max-width: 90vw;
+        img {
+            max-width: 90vw;
+        }
+    }
+}
