@@ -22,8 +22,8 @@ title: Blogger
 email: danielhg52@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is Daniel Hernandez blog!.
-baseurl: "/blogger"
-url: "https://danielhj1998.github.io"
+baseurl: /blogger
+url: https://danielhj1998.github.io
 github_username:  danielhj1998
 
 # Build

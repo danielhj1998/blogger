@@ -1,12 +1,21 @@
 ---
 layout: default
-title: Notas
+title: Artículos
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
+<ul class="post-list">
+    {% for post in site.posts %}
+    <a class="post-link" href="{{site.baseurl}}{{post.url}}">
+        <li>
+            {{ post.title }}
+        </li>
+        {{ post.excerpt }}
+        <div>
+            <p>⏱ {{post.reading_time}} min</p>
+            <p>
+            {{ post.date_shown }}
+            </p>
+        </div>
+    </a>
+    {% endfor %}
 </ul>

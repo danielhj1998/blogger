@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div>
+    <header class="post-header">
+        <div class="post-dir-menu">
+            <span><a class="normal" href={{ site.baseurl | append: '/' }}>🖋 Artículos</a></span>
+            <span>
+                <p>⏱ {{page.reading_time}} min</p>
+                <p class="post-meta">
+              {%- assign date_format = "%b %-d, %Y" -%}
+              <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: date_format }}
+              </time>
+              {%- if page.modified_date -%}
+                ~ 
+                {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+              <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                  {{ mdate | date: date_format }}
+              </time>
+              {%- endif -%}
+              </p>
+            </span>
+        </div>
+
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-body">
+        {{content}}
+        Agradezco mucho que te hayas tomado el tiempo de leerme y espero te haya gustado, si tienes alguna duda, comentario o recomendación por favor <a href="mailto:danielhg52@hotmail.com">dímelo</a>. <span class="feedback-gift">Feedback is a gift!</span>
+    </div>
+
+    <footer class="post-footer">
+        <div class="author-card">
+            <img src="https://avatars.githubusercontent.com/u/38321649?v=4">
+            <p>Escrito por <span>Daniel Hernández Jiménez</span>, estudiante de ingeniería mecatrónica en la UPIITA en México</p>
+        </div>
+    </footer>
+</div>
