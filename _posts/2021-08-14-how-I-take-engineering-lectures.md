@@ -7,29 +7,28 @@ date_shown: 14 Ago 2021
 excerpt_separator: <!--intro-->
 ---
 
-Soy el tipo de persona que gusta de tener buenos apuntes 🤓, porque sé que mi yo del futuro me lo va a agradecer. Sin embargo, al iniciar la pandemia por Covid 19 😷 y con eso, las clases en línea en la universidad, tomaba todas mis clases en la laptop mientras escribía mis apuntes en el cuaderno. Realmente era algo incómodo 😒, pues ocupaba mucho más espacio que antes y desde mi punto de vista no tenía sentido que siguiera haciéndolo de esa manera cuando tenía la PC ahí encendida de todas formas.
+Soy el tipo de persona que gusta de tener buenos apuntes 🤓, porque sé que mi yo del futuro me lo va a agradecer. Sin embargo, al iniciar la pandemia por Covid 19 😷 y con eso, las clases en línea en la universidad, tomaba todas mis clases en la laptop mientras escribía mis apuntes en el cuaderno. Realmente era algo incómodo 😒, pues ocupaba mucho más espacio que antes y desde mi punto de vista no tenía sentido que siguiera haciéndolo de esa manera, teniendo la PC encendida.
 
 <!--intro-->
 
-## Una buena herramienta de notas
-Lo que busco en una herramienta para tomar mis notas de clase es lo siguiente:
-1. **Tomar notas al ritmo de la clase** 👨‍🏫💨.
-    Necesito ser capaz de tomar apuntes con enunciados normales, pero también al ser clase de ingeniería, matemáticas, gráficos, e incluso código en diferentes lenguajes.
-2. **Estructurar los temas, resaltar ideas y dejar notas para mi yo futuro** 🧱.
-    Con esto me refiero a que los temas estén bien delimitados y que de forma rápida pueda ojear los apuntes e identificar dónde está lo que busco. Esto lo hago por medio de títulos, diferentes tipos de letra y colores.
+## Qué es lo que busco en una herramienta de notas?
+1. **Notas al ritmo de la clase** 👨‍🏫💨.
+    Necesito ser capaz de escribir enunciados claros, ideas y palabras clave, pero al ser clase de ingeniería, debo de poder incluir ecuaciones matemáticas, gráficos y código en diferentes lenguajes.
+2. **Temas estructurados, resaltar ideas y dejar notas para mi yo futuro** 🧱.
+    Me refiero a que los temas estén bien delimitados y que de forma rápida pueda ojear los apuntes e identificar dónde está lo que busco. Esto lo hago usando títulos, diferentes tipos de letra y colores.
 3. **Corrección de errores** 🚧.
-    En una libreta normal, por lo general tengo un corrector con el cual puedo realizar correcciones menores, sin embargo sacrificando siempre algo de estética. Además de que los errores más grandes incluso implican realizar el apunte de nuevo. En este punto las notas digitales ayudan muchísimo.
-4. **Prácticidad de uso** 🗸.
-    Una gran desventaja que tienen las computadoras frente a un simple cuaderno, es que al cuaderno sólo hay que abrirlo y buscar entre sus hojas, mientras que la computadora hay que esperar a que encienda y luego buscar y abrir los archivos. Además una libreta se puede cargar donde sea y una laptop es mucho más pesada y por ende más difícil de llevar a todos lados.
+    En una libreta, normalmente uso corrector para maquillar los errores, además, los errores más grandes implican realizar el apunte de nuevo. En este punto, las notas digitales ayudan muchísimo.
+4. **Practicidad de uso** 🗸.
+    Una de las ventajas que tiene un cuaderno frente a la computadora, es que sólo hay que abrirlo y buscar entre sus hojas, mientras que para la computadora hay que esperar a que encienda, luego buscar los archivos y abrirlos. Además una libreta se puede cargar donde sea y una laptop es mucho más pesada, por ende es más difícil de llevar a todos lados.
 5. **Facilidad para compartir** 🔗.
-    Muchas veces mis compañeros de clase me pedían mis notas para estudiar o reponer los temas. En ese sentido es mejor tener apuntes digitales pues en el caso del cuaderno se requiere tomar fotocopias o prestar el cuaderno 🥴. Por lo que pasar un simple archivo sería más fácil... Claro, siempre y cuando la otra persona no necesite instalar nada especial para verlo.
+    Muchas veces mis compañeros de clase me pedían mis notas para estudiar o ponerse al día con los temas. En ese sentido, es mejor tener apuntes digitales porque en el caso del cuaderno, se requiere tomar fotocopias o prestarlo 🥴. Y obviamente pasar un simple archivo sería más fácil... Claro!, siempre y cuando la otra persona no necesite instalar nada nuevo para verlo.
 
 ## Manos a la obra
-Para encontrar la herramienta adecuada comencé a probar distintas alternativas, primero con [*Cherry Tree*](https://www.giuspen.com/cherrytree/) que tiene una muy buena organización de las notas pero no tiene soporte para escribir matemáticas, luego con [*Word*](https://office.live.com/start/Word.aspx?ui=es%2DES) y aunque se pueden tomar notas con ecuaciones matemáticas, no es nada rápido y la organización de las notas tampoco lo es.
+Para encontrar la herramienta adecuada, comencé probando distintas alternativas, primero con [*Cherry Tree*](https://www.giuspen.com/cherrytree/) que tiene una muy buena organización de las notas, pero no tiene soporte para escribir matemáticas, luego con [*Word*](https://office.live.com/start/Word.aspx?ui=es%2DES) y aunque se pueden tomar notas con ecuaciones matemáticas, no es nada rápido y la organización de las notas tampoco lo es.
 
-Luego llegué a [*Joplin*](https://joplinapp.org/) donde encontré una gran herramienta que permitía el uso de [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [KaTeX](https://katex.org/docs/supported.html), [Vim](https://missing.csail.mit.edu/2020/editors/), y tenía plugins muy interesantes que hicieron que llevara mis notas ahí por dos semestres. Vim hacia que pudiera escribir todo muy rápido y es lo que más me gustaba.
+Así llegué a [*Joplin*](https://joplinapp.org/) donde encontré una gran herramienta que me permitió usar [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [KaTeX](https://katex.org/docs/supported.html), [Vim](https://missing.csail.mit.edu/2020/editors/), y tenía plugins muy interesantes que me convencieron de hacer mis notas ahí por dos semestres. Vim hacia que pudiera escribir todo muy rápido y es lo que más me gustaba.
 
-Sin embargo, al escribir matemáticas, en ocasiones me encontraba con que el profesor iba muy rápido, y por más que intentara, tenía que concentrarme sólo en escribir las ecuaciones y no ponía más atención en entender la clase 🥴, o incluso tenía que quedarme más tiempo ya terminada la clase para terminar el apunte 😔.
+Pero ocasiones el profesor iba muy rápido, y por más que intentaba, tenía que concentrarme sólo en escribir ecuaciones y dejaba de comprender el tema 🥴, o incluso tenía que quedarme más tiempo ya concluida la clase, para terminar el apunte 😔.
 
 ## Snippets?
 
