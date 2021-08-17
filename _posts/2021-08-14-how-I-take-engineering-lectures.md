@@ -28,7 +28,7 @@ Para encontrar la herramienta adecuada, comencé probando distintas alternativas
 
 Así llegué a [*Joplin*](https://joplinapp.org/) donde encontré una gran herramienta que me permitió usar [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [KaTeX](https://katex.org/docs/supported.html), [Vim](https://missing.csail.mit.edu/2020/editors/), y tenía plugins muy interesantes que me convencieron de hacer mis notas ahí por dos semestres. Vim hacia que pudiera escribir todo muy rápido y es lo que más me gustaba.
 
-Pero ocasiones el profesor iba muy rápido, y por más que intentaba, tenía que concentrarme sólo en escribir ecuaciones y dejaba de comprender el tema 🥴, o incluso tenía que quedarme más tiempo ya concluida la clase, para terminar el apunte 😔.
+Pero en ocasiones el profesor iba muy rápido, y por más que intentaba, tenía que concentrarme sólo en escribir ecuaciones y dejaba de comprender el tema 🥴, o incluso tenía que quedarme más tiempo ya concluida la clase, para terminar el apunte 😔.
 
 ## Snippets?
 
