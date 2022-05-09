@@ -227,12 +227,15 @@ div.post-body {
     }
     a {
         margin-bottom: 0.5em;
+        &:hover {
+            color: $dark !important;
+        }
+        &:before {
+            display: none;
+        }
     }
     .isActive {
         font-weight: 600; 
-    }
-    a:before {
-        display: none;
     }
     li {
         margin-bottom: 0.05em;
