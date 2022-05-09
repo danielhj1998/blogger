@@ -258,8 +258,8 @@ footer.post-footer {
         border-radius: 5px;
         max-width: 500px;
         padding: 15px;
-        background-color: transparentize($code-bg, 0.5);
-        color: $clear;
+        background-color: $code-bg;
+        color: $dark;
         img {
             width: 60px;
             height: 60px;
