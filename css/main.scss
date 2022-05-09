@@ -142,7 +142,8 @@ a.post-link {
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
     li {
-        font-size: $font-size-body * 1.3;
+        font-size: $font-size-body * 1.4;
+        font-weight: 700;
         font-family: "Inter", sans-serif
     }
     &:hover {
@@ -154,10 +155,11 @@ a.post-link {
         color: $dark;
     }
     p {
-        text-align: justify;
+        font-size: 80%;
         margin: 10px 20px;
     }
     div {
+        font-weight: 700;
         display: flex;
         flex-direction: row;
         width: 100%;
